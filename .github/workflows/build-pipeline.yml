@@ -29,6 +29,8 @@ jobs:
           node-version: '14.x'
       - name: Install dependencies
         run: npm ci
+      - name: Build
+        run: npm run build
       # Step 2: Add deploy to Github pages here! Hot tip - The solution is in the Readme
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
